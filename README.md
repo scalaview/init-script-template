@@ -10,6 +10,12 @@ else that runs itself.
 Getting started
 ---------------
 
+```shell```
+sudo mv /filename /etc/init.d/
+sudo chmod +x /etc/init.d/filename 
+sudo update-rc.d filename defaults 
+```
+
 Copy _template_ to /etc/init.d and rename it to something
 meaningful. Then edit the script and enter that name after _Provides:_
 (between _### BEGIN INIT INFO_ and _### END INIT INFO_).
